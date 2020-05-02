@@ -98,7 +98,7 @@ const MapaComponent = props => {
   const Map = () => {
     puntos = [];
     currentRuta.points.forEach(p => puntos.push(p.getCoordinates()));
-    return <MapaStyle id="MapStyle" center={puntos[0]} zoom={15} >
+    return <MapaStyle id="MapStyle" center={( puntos.length !== 0)? puntos[0] : [43.354689, -5.851238]} zoom={15} >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Polyline color={'blue'} positions={puntos}></Polyline>
       {getMark()}

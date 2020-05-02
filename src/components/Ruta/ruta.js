@@ -49,6 +49,10 @@ export default class Ruta {
         return this.comments.length;
     }
 
+    getName(){
+        return this.name;
+    }
+
 
     createComment(file, text) {
         let f = new Date();
