@@ -19,6 +19,18 @@ export class WayPoint{
         this.description = description;
         this.point = point;
     }
+
+    getName(){
+      return this.name;
+    }
+
+    getDescription(){
+        return this.name;
+    }
+
+    getPoint(){
+        return this.point;
+    }
 }
 
 export class CommentObj{
