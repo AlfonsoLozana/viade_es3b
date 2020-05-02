@@ -30,8 +30,8 @@
     "jquery": "^3.5.0",
     "leaflet": "^1.6.0",
     "leaflet-react": "^3.0.5",
-    "locale": "^0.1.0",
     "material-auto-rotating-carousel": "^3.0.2",
+    "locale": "^0.1.0",
     "moment": "^2.25.1",
     "n3": "^1.3.6",
     "normalize.css": "^8.0.1",
@@ -165,21 +165,20 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "jest": {
-    "collectCoverage": true,
+    "collectCoverage":true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/**/*.d.ts"
+    "!src/**/*.d.ts"
+    
     ],
     "coverageDirectory": "coverage",
     "resolver": "jest-pnp-resolver",
     "setupFiles": [
       "react-app-polyfill/jsdom"
     ],
-    "setupFilesAfterEnv": [
-      "react-app-polyfill/jsdom"
-    ],
+    "setupFilesAfterEnv":["react-app-polyfill/jsdom"],
     "testEnvironment": "jsdom",
-    "testPathIgnorePatterns": [
+    "testPathIgnorePatterns":[
       "\\\\node_modules\\\\",
       "\\\\scripts\\\\",
       "/scripts/"
